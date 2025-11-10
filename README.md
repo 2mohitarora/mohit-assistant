@@ -30,3 +30,7 @@ Create a `.env` file in the project root:
 ```bash
 ANTHROPIC_API_KEY=your_api_key_here
 ```
+### 2. Run Your First Module
+``bash
+uv run 0_querying.py
+```

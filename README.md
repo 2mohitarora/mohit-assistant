@@ -30,7 +30,44 @@ Create a `.env` file in the project root:
 ```bash
 ANTHROPIC_API_KEY=your_api_key_here
 ```
-### 2. Run Your First Module
+### 3. Run Your First Module
 ```bash
 uv run 0_querying.py
+```
+### 4. Configure Local Settings
+
+**Important:** The `.claude/settings.json` file contains system-specific file paths that need to be updated for your local environment.
+
+Edit `.claude/settings.json` and update the sound file paths to match your system. You may also have to update the uv run command path to the absolute path to the python file.
+
+```json
+{
+  "outputStyle": "Personal Assistant",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Funk.aiff"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/log_agent_actions.py"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Purr.aiff"
+          }
+        ]
+      }
+    ]
+  }
+}
 ```

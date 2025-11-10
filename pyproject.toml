@@ -1,0 +1,17 @@
+[project]
+name = "mohit-assistant"
+version = "0.1.0"
+description = "Mohit's personal assistant"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "claude-agent-sdk>=0.1.1",
+    "nest-asyncio>=1.6.0",
+    "python-dotenv>=1.1.1",
+    "rich>=14.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.1",
+]

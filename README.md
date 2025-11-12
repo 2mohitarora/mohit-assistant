@@ -3,11 +3,11 @@
 Before starting, make sure you have:
 
 - **Python 3.13+** installed on your system
+- **Node.js**
 - **uv** installed [instructions](https://docs.astral.sh/uv/getting-started/installation/)
 - **Claude Code** installed
 `npm install -g @anthropic-ai/claude-code`
 - **Chrome browser**
-- **Node.js**
 
 Optional:
 You can either use an Anthropic API key or authenticate with Claude Code. If authenticating with Claude Code, you don't need to set an API key.

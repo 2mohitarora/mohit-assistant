@@ -23,10 +23,15 @@ async def main():
 
     options = ClaudeAgentOptions(
         model=args.model,
-        allowed_tools=["Read", "Write"],
+        allowed_tools=[
+            "Read",
+            "Write",
+            "mcp__filesystem__*"  # Allow all filesystem MCP tools from .mcp.json
+        ],
         disallowed_tools=["WebSearch", "WebFetch"],
         permission_mode="acceptEdits",
-        setting_sources=["project"],
+        setting_sources=["project"],  # This loads .claude/settings.json
+        mcp_servers=".mcp.json",  # Load MCP servers from .mcp.json file
         # settings='{"outputStyle": "default"}',
         # system_prompt="You are a pirate. You must respond like a pirate.",
         # add_dirs=["."], # allow access to other directories

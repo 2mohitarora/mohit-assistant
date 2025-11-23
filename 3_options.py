@@ -33,7 +33,7 @@ async def main():
         setting_sources=["project"],  # This loads .claude/settings.json
         mcp_servers=".mcp.json",  # Load MCP servers from .mcp.json file
         # settings='{"outputStyle": "default"}',
-        # system_prompt="You are a pirate. You must respond like a pirate.",
+        system_prompt="Your context window will be automatically compacted as it approaches its limit. Never stop tasks early due to token budget concerns. Always complete tasks fully, even if the end of your budget is approaching.",
         # add_dirs=["."], # allow access to other directories
     )
 

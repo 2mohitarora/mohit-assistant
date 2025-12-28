@@ -20,3 +20,5 @@ logs/*
 
 # Playwright
 .playwright-mcp
+
+docs/Q1.csv

@@ -20,8 +20,7 @@ async def main():
 
     options = ClaudeAgentOptions(
         model=args.model,
-        allowed_tools=["Read", "Write"],
-        disallowed_tools=["WebSearch", "WebFetch"],
+        allowed_tools=["Read", "Write", "WebSearch", "WebFetch"],
         permission_mode="acceptEdits",
         setting_sources=["project"]
     )

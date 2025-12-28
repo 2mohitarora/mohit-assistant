@@ -26,7 +26,7 @@ async def main():
             'Glob',
             "Skill"
         ],
-        permission_mode="acceptEdits",
+        permission_mode="bypassPermissions",
         setting_sources=["project"],
     )
 

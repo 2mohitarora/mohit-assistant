@@ -2,9 +2,21 @@
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["@modelcontextprotocol/server-filesystem"],
+      "args": [
+        "@modelcontextprotocol/server-filesystem"
+      ],
       "env": {
         "ALLOWED_PATHS": "/Users/mua0008/walmart/mohit-assistant"
+      }
+    },
+    "nano-banana": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "nanobanana-mcp"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "your-api-key-here"
       }
     }
   }

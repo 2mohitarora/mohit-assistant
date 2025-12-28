@@ -12,12 +12,8 @@
     "nano-banana": {
       "command": "npx",
       "args": [
-        "-y",
-        "nanobanana-mcp"
-      ],
-      "env": {
-        "GEMINI_API_KEY": "your-api-key-here"
-      }
+        "nano-banana-mcp"
+      ]
     }
   }
 }

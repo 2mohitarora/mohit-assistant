@@ -1,5 +1,5 @@
 {
-  "outputStyle": "Personal Assistant",
+  "outputStyle": "Developer Assistant",
   "hooks": {
     "Stop": [
       {

@@ -57,3 +57,5 @@ if __name__ == "__main__":
     nest_asyncio.apply()
 
     asyncio.run(main())
+
+ #Split AI.pdf in docs directory into individual pdfs for each page   

@@ -1,5 +1,5 @@
 {
-    "name": "wcnp-helper",
+    "name": "wcnp",
     "version": "1.0.0",
     "description": "WCNP/KITT onboarding and troubleshooting, including custom agent for WCNP and KITT"
 }

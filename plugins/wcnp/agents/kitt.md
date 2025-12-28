@@ -1,5 +1,5 @@
 ---
-name: kitt-helper
+name: kitt
 description: An expert at writing kitt files.
 tools: Read, Write, Edit, MultiEdit, Glob, Grep, WebSearch, WebFetch, TodoWrite
 model: sonnet
